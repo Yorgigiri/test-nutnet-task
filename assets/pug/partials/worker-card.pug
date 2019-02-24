@@ -1,0 +1,6 @@
+mixin worker-card(photo, name, job)
+    +b.worker-card.col-md-3.col-sm-4.col-xs-6
+        +e({tag: 'img'}).photo(src=photo)
+        +b.worker-card-info
+            +e.name= name
+            +e.job= job

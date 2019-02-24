@@ -1,0 +1,15 @@
+include ../partials/worker-card
++b.team
+    .container
+        .h2.h2_type2 MEET OUR AMAZING TEAM
+            span Lorem ipsum dolor sit amet proin gravida nibh vel velit
+        +b.team-list
+            .row.justify-content-center
+                +worker-card('../img/Vince_Vaughn.jpg', 'Vince Vaughn', 'CEO & FOUNDER')
+                +worker-card('../img/Taylor_Kitsch.jpg', 'Taylor Kitsch', 'ENGINEERING')
+                +worker-card('../img/Rachel_McAdams.jpg', 'Rachel McAdams', 'DESIGNER')
+                +worker-card('../img/Colin_Farrell.jpg', 'Colin Farrell', 'MARKETING')
+        +b.team-bottom
+            +e.text Become part of our dream team, let’s join us ! 
+            a.button(href="#") We are hiring
+

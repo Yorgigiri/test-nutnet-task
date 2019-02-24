@@ -1,0 +1,106 @@
+.expertise {
+    padding: 70px 0;
+
+    &-list {
+        &__column {
+            @include media-breakpoint-up(md) {
+                &:nth-child(even) {
+                    border-left: 1px solid $color_3;
+                    border-right: 1px solid $color_3;
+                }
+            }
+        }
+    }
+
+    & .row {
+        @include media-breakpoint-up(md) {
+            border-bottom: 1px solid $color_3;
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &-element {
+        padding: 38px 0;
+        text-align: center;
+
+        &__title {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: $color_2;
+            text-transform: uppercase;
+            @include letterspacing(50, 14);
+        }
+
+        &__description {
+            font-size: 14px;
+            font-weight: 300;
+            opacity: 0.75;
+            color: $color_4;
+        }
+
+        &__icon {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 34px;
+
+            &_1 {
+                &:before {
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    @include sprite($expertise-icon-1);
+                }
+            }
+
+            &_2 {
+                &:before {
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    @include sprite($expertise-icon-2);
+                }
+            }
+
+            &_3 {
+                &:before {
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    @include sprite($expertise-icon-3);
+                }
+            }
+
+            &_4 {
+                &:before {
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    @include sprite($expertise-icon-4);
+                }
+            }
+
+            &_5 {
+                &:before {
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    @include sprite($expertise-icon-5);
+                }
+            }
+
+            &_6 {
+                &:before {
+                    content: "";
+                    display: block;
+                    margin: 0 auto;
+                    @include sprite($expertise-icon-6);
+                }
+            }
+        }
+    }
+}

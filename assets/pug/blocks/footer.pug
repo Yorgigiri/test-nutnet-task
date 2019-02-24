@@ -1,0 +1,30 @@
++b({tag: 'footer'}).footer
+    .container
+        .row
+            .col-lg-4
+                +e({tag: 'a'}).logo(href="#")
+                +e.info lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+                +b.footer-links
+                    .container
+                        .row.justify-content-between
+                            +e({tag: 'a'}).link(href="#") Help
+                            +e({tag: 'a'}).link(href="#") Terms & condition
+                            +e({tag: 'a'}).link(href="#") Privacy
+            .col-lg-4
+                +e.title Our studio
+                +e.adress Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+                +e.phone (+62) 21-2224 3333
+            .col-lg-4
+                +e.title Stay in touch
+                +b.footer-subscribe
+                    +e({tag: 'form'}).form
+                        +e({tag: 'input'}).input(type="email" placeholder="Subscribe our newsletter")
+                        +e({tag: 'button'}).submit
+                +b.social
+                    +e({tag: 'a'}).link._fb(href="#" target="_blank")
+                    +e({tag: 'a'}).link._tweet(href="#" target="_blank")
+                    +e({tag: 'a'}).link._dribble(href="#" target="_blank")
+                    +e({tag: 'a'}).link._inst(href="#" target="_blank")
+                    +e({tag: 'a'}).link._gplus(href="#" target="_blank")
+                    +e({tag: 'a'}).link._youtube(href="#" target="_blank")
+                +e.copyright Copyright © 2015 - Tajem Creative

@@ -1,0 +1,23 @@
+.watch-video {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/watch-video__bg.jpg) no-repeat;
+    background-size: cover;
+    &__play {
+    }
+    &__icon {
+        display: block;
+        @include sprite($play_icon);
+        margin-bottom: 32px;
+    }
+    &__text {
+        font-size: 16px;
+        color: $color_white;
+        text-transform: uppercase;
+        font-weight: 900;
+        @include letterspacing(50, 16);
+    }
+}

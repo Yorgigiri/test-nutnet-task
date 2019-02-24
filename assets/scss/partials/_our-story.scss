@@ -1,0 +1,34 @@
+.our-story {
+    padding: 70px;
+    &__figure {
+        display: block;
+        max-width: 235px;
+        margin: 0 60px;
+        width: 100%;
+        height: auto;
+    }
+    &__title {
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $color_2;
+        font-family: $playfair_font;
+        font-weight: 700;
+        @include letterspacing(50, 22);
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 22px;
+        color: $color_2;
+        opacity: 0.75;
+        font-weight: 300;
+        margin-bottom: 30px;
+        @include letterspacing(30, 14);
+        & p {
+            margin: 0 0 27px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

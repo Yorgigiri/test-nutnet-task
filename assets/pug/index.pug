@@ -1,0 +1,21 @@
+include ../pug-bem-mixins/bemto.pug
+
+doctype html  
+html(lang='en')  
+    head
+        title NutNet-Test-Task
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        link(href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet")
+        link(rel='stylesheet', href='css/main.css', type='text/css' )
+    body
+        include blocks/header
+        include blocks/promo
+        include blocks/our-story
+        include blocks/watch-video
+        include blocks/expertise
+        include blocks/team
+        include blocks/our-works
+        include blocks/reviews
+        include blocks/footer
+        script(src="js/main.min.js")
+                    

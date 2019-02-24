@@ -1,0 +1,39 @@
+.worker-card {
+    max-width: 240px;
+    padding-right: 10px;
+    padding-left: 10px;
+    @include media-breakpoint-up(xs) {
+        margin-bottom: 20px;
+    }
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+    }
+    &__photo {
+        display: block;
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+    }
+    // info
+    &-info {
+        padding: 20px 10px;
+        border: 1px solid $color_9;
+        text-align: center;
+        &__name {
+            font-size: 14px;
+            font-weight: 900;
+            margin-bottom: 5px;
+            color: $color_white;
+            text-transform: uppercase;
+            @include letterspacing(50, 14);
+        }
+
+        &__job {
+            font-size: 14px;
+            font-weight: 300;
+            color: $color_10;
+            opacity: 0.7;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,0 +1,14 @@
++b.our-works
+    +b.our-works-top
+        .container
+            +e.row.row.justify-content-between.align-items-center
+                +e.title Our works
+                +e({tag: 'a'}).link(href="#") See All Project in dribbble
+    +b.our-works-gallery
+        .container
+            .row
+                - for ( let n = 0; n < 12; n++ ) 
+                    +e.column.col-sm-6.col-md-3.col-lg-2
+                        +e({tag: 'img'}).image(src="../img/placeholder_267x200.png")
+    +b.our-works-bottom
+        a.button(href="#") Load more

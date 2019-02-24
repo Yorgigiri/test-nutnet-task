@@ -1,0 +1,34 @@
+.social {
+    font-size: 0;
+    text-align: left;
+    &__link {
+        display: inline-block;
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_fb {
+            @include sprite($social-fb);
+        }
+
+        &_tweet {
+            @include sprite($social-tweet);
+        }
+
+        &_dribble {
+            @include sprite($social-dribble);
+        }
+
+        &_inst {
+            @include sprite($social-inst);
+        }
+
+        &_gplus {
+            @include sprite($social-gplus);
+        }
+
+        &_youtube {
+            @include sprite($social-youtube);
+        }
+    }
+}

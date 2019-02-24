@@ -1,0 +1,38 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 0;
+
+    &__logo {
+        display: block;
+        width: 128px;
+        height: 50px;
+        background: url(../img/header__logo.png) no-repeat;
+    }
+
+    &-menu {
+        text-align: right;
+
+        &__link {
+            font-size: 13px;
+            text-decoration: none;
+            @include letterspacing(25, 13);
+            text-transform: uppercase;
+            margin-left: 25px;
+            font-weight: 900;
+            color: $color_white;
+
+            &_active,
+            &:hover {
+                color: $color_1;
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}

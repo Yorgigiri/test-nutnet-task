@@ -1,0 +1,35 @@
+.promo {
+    background: url(../img/promo-bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 670px;
+    text-align: center;
+    color: $color_white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    & .container {
+        max-width: 800px;
+    }
+    &__title {
+        font-size: 32px;
+        font-family: $playfair_font;
+        font-weight: 900;
+        margin-bottom: 25px;
+        @include letterspacing(10, 32);
+        &::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 1px;
+            margin: 25px auto 0;
+            background: $color_1;
+        }
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+        margin-bottom: 45px;
+        @include letterspacing(50, 14);
+    }
+}

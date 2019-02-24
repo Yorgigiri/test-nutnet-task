@@ -1,0 +1,95 @@
+@import "normalize";
+@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/sprite';
+@import 'partials/header';
+@import 'partials/promo';
+@import 'partials/our-story';
+@import 'partials/watch-video';
+@import 'partials/expertise';
+@import 'partials/team';
+@import 'partials/our-works';
+@import 'partials/reviews';
+@import 'partials/footer';
+
+$grid-gutter-width: 20px;
+
+.container {
+    max-width: 960px;
+    padding-right: ($grid-gutter-width / 2);
+    padding-left: ($grid-gutter-width / 2);
+}
+
+.row {
+    margin-right: -($grid-gutter-width / 2);
+    margin-left: -($grid-gutter-width / 2);
+}
+
+.col {
+    padding-right: ($grid-gutter-width / 2);
+    padding-left: ($grid-gutter-width / 2);
+}
+
+body {
+    font-family: $roboto_font;
+    font-weight: 400;
+}
+
+.h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    @include letterspacing(50, 22);
+    font-family: $playfair_font;
+    font-weight: 700;
+    text-align: center;
+    color: $color_2;
+    margin-bottom: 40px;
+    & span {
+        display: block;
+        margin: 10px 0 15px;
+        font-size: 14px;
+        color: $color_5;
+        text-transform: initial;
+        font-weight: 400;
+        opacity: 0.75;
+        @include letterspacing(75, 14);
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        margin: 0 auto;
+        background: $color_6;
+    }
+    &_type2 {
+        color: $color_white;
+        & span {
+            color: $color_7;
+        }
+        &::after {
+            opacity: 0.2;
+            background: $color_white;
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid $color_1;
+    border-radius: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: $color_1;
+    font-family: $hammersmith_font;
+    transition: .1s transform linear;
+    &:hover {
+        transform: scale(0.95);
+    }
+}
