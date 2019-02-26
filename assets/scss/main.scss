@@ -1,6 +1,7 @@
 @import "normalize";
-@import '../../node_modules/bootstrap/scss/bootstrap-grid';
-@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid'; // bootstrap grid
+@import '../../node_modules/slick-carousel/slick/slick.scss'; // slick carousel styles
+@import '../../node_modules/magnific-popup/src/css/main.scss';
 
 @import 'partials/fonts';
 @import 'partials/variables';
@@ -14,6 +15,7 @@
 @import 'partials/team';
 @import 'partials/our-works';
 @import 'partials/reviews';
+@import 'partials/form';
 @import 'partials/footer';
 
 $grid-gutter-width: 20px;
@@ -29,7 +31,7 @@ $grid-gutter-width: 20px;
     margin-left: -($grid-gutter-width / 2);
 }
 
-.col {
+.row > [class*="col-"] {
     padding-right: ($grid-gutter-width / 2);
     padding-left: ($grid-gutter-width / 2);
 }
@@ -48,6 +50,7 @@ body {
     text-align: center;
     color: $color_2;
     margin-bottom: 40px;
+
     & span {
         display: block;
         margin: 10px 0 15px;
@@ -58,6 +61,7 @@ body {
         opacity: 0.75;
         @include letterspacing(75, 14);
     }
+
     &::after {
         content: "";
         display: block;
@@ -66,14 +70,24 @@ body {
         margin: 0 auto;
         background: $color_6;
     }
+
     &_type2 {
         color: $color_white;
+
         & span {
             color: $color_7;
         }
+
         &::after {
             opacity: 0.2;
             background: $color_white;
+        }
+    }
+
+    &_type3 {
+        &::after {
+            content: none;
+            display: none;
         }
     }
 }
@@ -86,10 +100,56 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 15px;
+    background: none;
+    outline: none;
+    cursor: pointer;
     color: $color_1;
     font-family: $hammersmith_font;
     transition: .1s transform linear;
+
     &:hover {
         transform: scale(0.95);
     }
+}
+
+.mfp-zoom-in {
+
+    /* start state */
+    .mfp-with-anim {
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        transform: scale(0.8);
+    }
+
+    &.mfp-bg {
+        opacity: 0;
+        transition: all 0.3s ease-out;
+    }
+
+    /* animate in */
+    &.mfp-ready {
+        .mfp-with-anim {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        &.mfp-bg {
+            opacity: 0.8;
+        }
+    }
+
+    /* animate out */
+    &.mfp-removing {
+
+        .mfp-with-anim {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+
+        &.mfp-bg {
+            opacity: 0;
+        }
+
+    }
+
 }

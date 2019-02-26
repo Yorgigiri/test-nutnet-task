@@ -1,5 +1,5 @@
 .our-story {
-    padding: 70px;
+    padding: 70px 0;
     &__figure {
         display: block;
         max-width: 235px;
@@ -29,6 +29,12 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+        &__figure {
+            margin: 0 auto 20px;
         }
     }
 }

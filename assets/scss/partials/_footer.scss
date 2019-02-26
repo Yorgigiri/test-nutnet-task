@@ -130,4 +130,33 @@
     & .social {
         margin-bottom: 70px;
     }
+
+    @include media-breakpoint-down(md) {
+        &-links {
+            & .justify-content-between {
+                justify-content: flex-start !important;
+            }
+
+            &__link {
+                margin-right: 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__column {
+            margin-bottom: 35px;
+        }
+
+        &-subscribe {
+            max-width: 500px;
+        }
+
+        &__copyright {
+            text-align: left;
+        }
+    }
+
 }

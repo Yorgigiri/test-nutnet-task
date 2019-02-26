@@ -7,9 +7,11 @@
     background: url(../img/watch-video__bg.jpg) no-repeat;
     background-size: cover;
     &__play {
+        text-decoration: none;
     }
     &__icon {
         display: block;
+        margin: 0 auto;
         @include sprite($play_icon);
         margin-bottom: 32px;
     }

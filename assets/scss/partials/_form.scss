@@ -1,0 +1,46 @@
+.form {
+    padding: 70px 0;
+
+    input:required:valid {
+        border-color: green;
+    }
+
+    &__inner {
+        max-width: 480px;
+        padding: 0 10px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    &__input {
+        padding: 0 20px;
+        width: 100%;
+        height: 45px;
+        font-family: $roboto_font;
+        font-weight: 300;
+        margin-bottom: 21px;
+        color: rgba($color_2, .5);
+        border: 1px solid rgba($color_black, .1);
+
+        @include placeholder {
+            color: rgba($color_2, .5);
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+        font-family: $roboto_font;
+        font-weight: 300;
+        margin-bottom: 21px;
+        resize: none;
+        color: rgba($color_2, .5);
+        border: 1px solid rgba($color_black, .1);
+
+        @include placeholder {
+            color: rgba($color_2, .5);
+        }
+    }
+}

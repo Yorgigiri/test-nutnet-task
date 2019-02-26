@@ -1,7 +1,7 @@
 +b({tag: 'footer'}).footer
     .container
         .row
-            .col-lg-4
+            +e.column.col-lg-4
                 +e({tag: 'a'}).logo(href="#")
                 +e.info lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
                 +b.footer-links
@@ -10,11 +10,11 @@
                             +e({tag: 'a'}).link(href="#") Help
                             +e({tag: 'a'}).link(href="#") Terms & condition
                             +e({tag: 'a'}).link(href="#") Privacy
-            .col-lg-4
+            +e.column.col-lg-4
                 +e.title Our studio
                 +e.adress Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
                 +e.phone (+62) 21-2224 3333
-            .col-lg-4
+            +e.column.col-lg-4
                 +e.title Stay in touch
                 +b.footer-subscribe
                     +e({tag: 'form'}).form

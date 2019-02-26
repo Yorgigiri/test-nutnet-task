@@ -1,0 +1,9 @@
++b.form
+    .h2.h2_type3 Give us a good news
+    +e.inner
+        form
+            +e({tag: 'input'}).input(type="text" name="name" placeholder="Name" required="required")
+            +e({tag: 'input'}).input(type="email" name="email" placeholder="Email" required="required")
+            +e({tag: 'input'}).input(type="text" name="subject" placeholder="Subject")
+            +e({tag: 'textarea'}).textarea(name="your_message" placeholder="Your Message")
+            input.button(type="submit" value="Submit")
