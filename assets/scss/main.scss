@@ -3,21 +3,6 @@
 @import '../../node_modules/slick-carousel/slick/slick.scss'; // slick carousel styles
 @import '../../node_modules/magnific-popup/src/css/main.scss';
 
-@import 'partials/fonts';
-@import 'partials/variables';
-@import 'partials/mixins';
-@import 'partials/sprite';
-@import 'partials/header';
-@import 'partials/promo';
-@import 'partials/our-story';
-@import 'partials/watch-video';
-@import 'partials/expertise';
-@import 'partials/team';
-@import 'partials/our-works';
-@import 'partials/reviews';
-@import 'partials/form';
-@import 'partials/footer';
-
 $grid-gutter-width: 20px;
 
 .container {
@@ -35,6 +20,23 @@ $grid-gutter-width: 20px;
     padding-right: ($grid-gutter-width / 2);
     padding-left: ($grid-gutter-width / 2);
 }
+
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/sprite';
+@import 'partials/header';
+@import 'partials/promo';
+@import 'partials/our-story';
+@import 'partials/watch-video';
+@import 'partials/expertise';
+@import 'partials/team';
+@import 'partials/our-works';
+@import 'partials/reviews';
+@import 'partials/form';
+@import 'partials/footer';
+
+
 
 body {
     font-family: $roboto_font;
